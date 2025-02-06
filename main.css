@@ -1,3 +1,19 @@
 svg {
     fill:rgb(43, 38, 38);
 }
+
+svg:hover{
+    fill:blue
+}
+
+h1 {
+    font-family: "Jura", serif;
+    color:black;
+      font-optical-sizing: auto;
+ 
+    }
+h2 {
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+   
+    }
