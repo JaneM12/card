@@ -1,11 +1,12 @@
-body {background-color: cadetblue;}
+body {background-color: #3F5B6C;}
 
 svg { 
-    stroke:blue;
+    stroke: white
 }
 
 svg:hover{
-    stroke: brown
+    stroke: white;
+    stroke-width: 4; 
 }
 
 h1 {
