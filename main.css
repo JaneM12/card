@@ -5,9 +5,7 @@ body {
 }
 
 svg:hover{
-    /* stroke: white; */
-    stroke-width: 4;
-    width: 32px; 
+    width: 29px; 
 }
 
 h1 {
@@ -27,5 +25,9 @@ h2 {
 
 svg {
     fill: white;
-    width: 35px;
+    width: 30.5px;
+}
+
+.mail {
+    width: 28px;
 }
