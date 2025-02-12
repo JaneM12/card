@@ -1,12 +1,41 @@
 body {
     background-color: #3F5B6C; margin: 0px;
     background-image: url('Images/Background_web.png');
-    background-size: ;
 }
 
 svg:hover{
     width: 29px; 
 }
+
+svg {
+    padding:10px;
+    fill: white;
+    width: 30.5px;
+}
+
+.icons {
+    width: 75px;
+    background-color: rgb(127, 134, 140);
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "l"
+    "i"
+    "m";}
+
+.insta {
+    grid-area: i
+    }
+
+.mail {
+    grid-area: m
+    }
+
+.linkedin {
+    grid-area: l
+    }
 
 h1 {
     font-family: "Jura", serif;
@@ -22,12 +51,3 @@ h2 {
     font-weight: 350;
     font-optical-sizing: auto;
     }
-
-svg {
-    fill: white;
-    width: 30.5px;
-}
-
-.mail {
-    width: 28px;
-}
