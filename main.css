@@ -1,13 +1,20 @@
 body {
-    background-color: #3F5B6C; margin: 0px;
+
+    background-color: #3F5B6C; 
+    margin: 0px;
     background-image: url('Images/Background_web.png');
 }
 
 /*.container for all text and icons in card*/
-.container {
-    display:flex;
+.card {
+    margin-top: 13%;
+    margin-left: 23%;
+    position: relative;
     width:874px;
     height:498px;
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY (-50%);
     background: linear-gradient(
         to right,
         #3F5B6C 0%,
@@ -15,59 +22,38 @@ body {
         #2D4554 50%,
         #2D4554 100%
     );
-    padding: 0px;
-    padding-bottom: 100px;
     border-radius: 25px;
-    height:100%;
     display: grid;
     grid-template-areas: 
 "l l . . . i u u u u u u"
 "t t t t t i u u u u u u"
 "t t t t t i u u u u u u"
-"t t t t t i u u u u u u"
-;
+"t t t t t i u u u u u u";
 }
+
 /*Inside ".container"*/
 .logo {
     grid-area: l;
     width: 110px;
     height: 110px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     }
+
+
+
+
+/* All text */
 .text {
     padding: 0px;
     grid-area: t;
     }
-.usernames {
-    grid-area: u;
-    }
-.icons {
-    padding-top: 95px;
-    margin: 0px;
-    width: 50px;
-    grid-area: i;
-    }
-
-
-.insta {
-    padding-top: 63px;
-    padding-bottom: 63px;
-}
-
-/*icon animation*/
-svg {
-    padding:10px;
-    fill: white;
-    width: 30.5px;
-    }   
-svg:hover{
-    width: 29px; 
-    }
-/* All text */
 h1 {
     padding-bottom: 20px;
-    margin-top: 8px;
+    padding-top: 0px;
+    margin-top: 0px;
     margin-left: 20px;
-    margin-right: 45px;
+    margin-right: 50px;
     margin-bottom: 0px;
     width: 462px;
     height:auto;
@@ -92,22 +78,43 @@ h2 {
     font-weight: 350;
     font-optical-sizing: auto;
     }
-
+.usernames {
+    margin-top:10px;
+    grid-area: u;
+    }
     .description {
         text-align: top;
     }
-
     .email {
-        padding-bottom: 35px;
+        padding-bottom: 45px;
         padding-top: 110px;
         width: 245px;
         word-wrap:break-word
     }
 
-    .insta-user {
 
+
+ .icons {
+    margin-top: 100px;
+    padding: 10px;
+    width: 50px;
+    grid-area: i;
     }
-
+/*icon animation*/
+svg {
+    fill: white;
+    width: 40px;
+    } 
+svg:hover{
+    width: 45px; 
+    } 
+.icons     
+/*individual Icons*/
     .linkedin {
         padding-bottom: 0px;
+        width: 40px
+    }
+.insta {
+    padding-top: 63px;
+    padding-bottom: 63px;
     }
