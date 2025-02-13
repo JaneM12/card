@@ -5,23 +5,23 @@ body {
 
 /*.container for all text and icons in card*/
 .container {
+    width:874px;
+    height:498px;
     background: linear-gradient(
         to right,
         #3F5B6C 0%,
-        #3F5B6C 60%,
+        #3F5B6C 59.4%,
         #2D4554 50%,
         #2D4554 100%
     );
     padding: 0px;
-    margin: 0px;
-    width:874px;
-    height:498px;
+    padding-bottom: 100px;
+    margin-right: 0 auto;
+    border-radius: 25px;
     height:100%;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows:auto;
     grid-template-areas: 
-"l l . . . . . . . . . ."
+"l l . . . i u u u u u u"
 "t t t t t i u u u u u u"
 "t t t t t i u u u u u u"
 "t t t t t i u u u u u u"
@@ -30,17 +30,20 @@ body {
 /*Inside ".container"*/
 .logo {
     grid-area: l;
-    width: 110px
+    width: 110px;
+    height: 110px;
     }
 .text {
+    padding: 0px;
     grid-area: t;
     }
 .usernames {
     grid-area: u;
     }
 .icons {
+    padding-top: 95px;
+    margin: 0px;
     width: 50px;
-    background-color: rgb(74, 68, 68);
     grid-area: i;
     }
 
@@ -61,7 +64,11 @@ svg:hover{
     }
 /* All text */
 h1 {
-    background-color: gray;
+    padding-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 28px;
+    margin-right: 40px;
+    margin-bottom: 0px;
     width: 462px;
     height:auto;
     border-bottom: 1px;
@@ -74,7 +81,9 @@ h1 {
     font-optical-sizing: auto;
     }
 h2 {
-    background-color: rgb(61, 61, 61);
+    margin: 0px;
+    padding-left: 15px;
+    padding-top: 20px;
     height:auto;
     width: 321px;
     font-family: "Montserrat", serif;
@@ -86,4 +95,19 @@ h2 {
 
     .description {
         text-align: top;
+    }
+
+    .email {
+        padding-bottom: 35px;
+        padding-top: 110px;
+        width: 245px;
+        word-wrap:break-word
+    }
+
+    .insta-user {
+
+    }
+
+    .linkedin {
+        padding-bottom: 0px;
     }
