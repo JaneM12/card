@@ -5,6 +5,7 @@ body {
 
 /*.container for all text and icons in card*/
 .container {
+    display:flex;
     width:874px;
     height:498px;
     background: linear-gradient(
@@ -16,7 +17,6 @@ body {
     );
     padding: 0px;
     padding-bottom: 100px;
-    margin-right: 0 auto;
     border-radius: 25px;
     height:100%;
     display: grid;
@@ -66,8 +66,8 @@ svg:hover{
 h1 {
     padding-bottom: 20px;
     margin-top: 8px;
-    margin-left: 28px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 45px;
     margin-bottom: 0px;
     width: 462px;
     height:auto;
@@ -82,7 +82,7 @@ h1 {
     }
 h2 {
     margin: 0px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 20px;
     height:auto;
     width: 321px;
