@@ -1,26 +1,35 @@
-body {
+html, body {
 
-    background-color: #3F5B6C; 
-    margin: 0px;
-    background-image: url('Images/Background_web.png');
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-/*.container for all text and icons in card*/
+body {
+    background-color: #3F5B6C; 
+    background-image: url('Images/Background_web.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*.card for all text and icons in card*/
 .card {
-    margin-top: 13%;
+    margin-top: -18%;
     margin-left: 23%;
     position: relative;
     width:874px;
     height:498px;
     /* position: absolute; */
     top: 50%;
+    Animation: SlideInup 1s ease-out;
     transform: translateY (-50%);
     background: linear-gradient(
         to right,
-        #3F5B6C 0%,
-        #3F5B6C 59.4%,
-        #2D4554 50%,
-        #2D4554 100%
+        #314754 0%,
+        #314754 59.4%,
+        #243642 50%,
+        #243642 100%
     );
     border-radius: 25px;
     display: grid;
@@ -31,13 +40,16 @@ body {
 "t t t t t i u u u u u u";
 }
 
-/*Inside ".container"*/
+/*Inside ".card"*/
 .logo {
     grid-area: l;
     width: 110px;
     height: 110px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
     }
 
 
@@ -65,7 +77,29 @@ h1 {
     color:white;
     font-weight: 400;
     font-optical-sizing: auto;
+    Animation: SlideInup 1s ease-out; 
+} 
+@keyframes SlideInDown {
+    0% {
+        transform: translateY(-15%);
+        opacity: 1;
     }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes SlideInup {
+    0% {
+        transform: translateY(10%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 h2 {
     margin: 0px;
     padding-left: 20px;
@@ -93,9 +127,9 @@ h2 {
     }
 
 
-
+/* icons */
  .icons {
-    margin-top: 100px;
+    margin-top: 110px;
     padding: 10px;
     width: 50px;
     grid-area: i;
@@ -105,16 +139,26 @@ svg {
     fill: white;
     width: 40px;
     } 
-svg:hover{
-    width: 45px; 
-    } 
-.icons     
+.icons svg {
+    fill:white;
+    width: 40px;
+    transition: transform 0.3s, filter 0.3s;
+    }
+.icons svg:hover{
+    transform: scale(1.125);
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)); 
+    }     
 /*individual Icons*/
-    .linkedin {
+.linkedin {
         padding-bottom: 0px;
-        width: 40px
+        width: 40px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+.linkedin:hover {
+        transform: scale(1.125);
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
     }
 .insta {
-    padding-top: 63px;
-    padding-bottom: 63px;
+    margin-top: 63px;
+    margin-bottom: 63px;
     }
