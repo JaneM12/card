@@ -18,8 +18,8 @@ body {
     margin-top: -18%;
     margin-left: 23%;
     position: relative;
-    width:874px;
-    height:498px;
+    width:58%;
+    height:60%;
     top: 50%;
     animation: SlideInup 1s ease-out;
     background: linear-gradient(
@@ -37,7 +37,6 @@ body {
 "t t t t t i u u u u u u"
 "t t t t t i u u u u u u";
 }
-
 
 /*Inside ".card"*/
 .logo {
@@ -161,3 +160,30 @@ svg {
         }
     }
 
+    @media (max-width:768px) {
+        body {font-size: 16px; padding: 0px;
+            .card {
+                margin-top: -18%;
+                margin-left: 0%;
+                margin-right: 0%;
+                position: relative;
+                width:100%;
+                height:60%;
+                top: 50%;
+                animation: SlideInup 1s ease-out;
+                background: linear-gradient(
+                    to bottom,
+                    #314754 0%,
+                    #314754 59.4%,
+                    #243642 50%,
+                    #243642 100%
+                );
+                border-radius: 0px;
+                display: grid;
+                grid-template-areas: 
+            "l l . . . i u u u u u u"
+            "t t t t t i u u u u u u"
+            "t t t t t i u u u u u u"
+            "t t t t t i u u u u u u";
+            }}
+    }
