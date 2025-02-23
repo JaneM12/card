@@ -1,1 +1,1 @@
-
+I made this page to bring people to my social media accounts through an online business card design. This was my first time coding a website, and it was really interesting to make as it helped me learn a lot more about HTML and CSS. I also learned more about site layout and design principles in the process. I created mockups for the card on Figma and then simplified it on Illustrator. I chose to use 'Lora' and 'Montserrat' fonts and played with some CSS animations to give the page a more simple, modern feel.
